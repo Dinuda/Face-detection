@@ -16,6 +16,7 @@
         //error.code
     }
     );
+    // play video(configure framers per second and video size)
     video.addEventListener('play', function () {
         draw(this, context, 640, 480);
     }, false);
@@ -40,6 +41,7 @@
                 context.stroke();
                 var prob = (probability[0] * 100).toPrecision(5).toString();
                 var text = prob + "%";
+                // red = face detected clearly
                 context.fillStyle = "red";
                 context.font = "13pt sans-serif";
                 context.fillText(text, start[0] + 5, start[1] + 20);
