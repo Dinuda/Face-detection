@@ -1,6 +1,7 @@
 (function () {
     var canvas = document.getElementById('canvas'),
         context = canvas.getContext('2d'),
+        // webcab video
         video = document.getElementById('webcam');
 
     navigator.getMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
