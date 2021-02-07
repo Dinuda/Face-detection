@@ -47,7 +47,7 @@
                 context.fillText(text, start[0] + 5, start[1] + 20);
             }
         }
-        // draw a red box around the face detected(if)
+        // draw a red box around the face detected(if face detected)
         setTimeout(draw, 250, video, context, width, height);
     }
 })();
